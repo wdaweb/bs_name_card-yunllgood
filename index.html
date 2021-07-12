@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2021職訓作業 BS_Name_Card</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', 'Micrsoft JhenHei', sans-serif;
+      box-sizing: border-box;
+    }
+
+    #name {
+      height: 400px;
+    }
+
+    #photo {
+      height: 300px;
+      background: url("https://picsum.photos/600/400/?random=1");
+    }
+
+    .container {
+      width: 800px;
+    }
+
+    @media (min-width:576px) {
+      .row {
+        height: 400px;
+        background: white;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #name {
+        height: 400px;
+      }
+
+      #photo {
+        height: 400px;
+        background: url("https://picsum.photos/600/400/?random=1");
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex justify-content-center align-items-center vh-100 w-100 overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div id="photo" class="col-12 col-sm-4">
+        </div>
+        <div id="name" class="col-12 col-sm-8 p-5">
+          <h5>Web designer</h5>
+          <h1>Yun Chen</h1>
+          <h4>網頁研究所</h4>
+          <br>
+          <br>
+          <h6>住址: 桃園市XX區XX里10鄰100巷100號</h6>
+          <h6>電話: 0800-0800</h6>
+          <h6>E-mail: aaa@gmail.com</h6>
+          <h6>網站: https://aaa.com.tw</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
